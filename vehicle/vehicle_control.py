@@ -73,9 +73,22 @@ class BinaryDataHandler:
         self.vehicle.setMotorPower(0, 0)
         time.sleep(0.1)
         self.vehicle.setMotorPower(50, 10)
-        time.sleep(0.4)
-        self.vehicle.setMotorPower(100, -100)
         time.sleep(1)
+        self.vehicle.setMotorPower(100, -100)
+        time.sleep(1.3)
+
+        self.vehicle.setMotorPower(100, 50)
+        time.sleep(0.4)
+        self.vehicle.setMotorPower(100, 100)
+        time.sleep(0.3)
+        self.vehicle.setMotorPower(-100, 100)
+        time.sleep(0.3)
+
+        self.vehicle.setMotorPower(100, 100)
+        time.sleep(0.3)
+        self.vehicle.setMotorPower(-100, 100)
+        time.sleep(0.3)
+
 
 
         self.vehicle.setMotorPower(0, 0)
